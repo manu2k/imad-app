@@ -84,7 +84,7 @@ function createTemplate(data) {
                     <h1>Comments:</h1>
                     <textarea name='comment' id='comment'></textarea>
                     <br/>
-                    <input type="text" id="feedback" placeholder="feedback"/>
+                    <input type="text" id="feedback" placeholder="Provide comments here!"/>
                 </div>
             </body>
         </html>`;

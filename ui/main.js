@@ -61,3 +61,12 @@ submit.onclick = function(){
     request.send(null);
     
 };
+
+//comments section
+var comment = document.getElementById('comments');
+var addedComment = document.getElementById('feedback');
+var feedbackData = addedComment.value;
+var enterComments = document.getElementById('submit_button');
+enterComments.onclick = function(){
+    
+};

@@ -79,7 +79,7 @@ function createTemplate(data) {
                     </div>
                     <div>
                         ${content}
-                    </div
+                    </div>
                     <hr/>
                     <textarea name='comment' id='comment'></textarea><br />
                 </div>

@@ -63,7 +63,7 @@ submit.onclick = function(){
 };
 
 //comments section
-var comment = document.getElementById('comments');
+var comment = document.getElementById('comment');
 var addedComment = document.getElementById('feedback');
 var feedbackData = addedComment.value;
 var enterComments = document.getElementById('submit_button');

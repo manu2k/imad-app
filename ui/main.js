@@ -34,7 +34,6 @@ button.onclick = function (){
 };
 
 //submit button
-
 var submit = document.getElementById('submit_btn');
 submit.onclick = function(){
     //make a request to the server and send name
@@ -55,6 +54,7 @@ submit.onclick = function(){
             }
         }
     };
+    name='';
     var nameInput = document.getElementById('name');
     var name = nameInput.value;
     request.open('GET','http://manu2k.imad.hasura-app.io/submit-name?name=' + name,true);

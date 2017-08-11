@@ -69,4 +69,5 @@ var feedbackData = addedComment.value;
 var enterComments = document.getElementById('submit_button');
 enterComments.onclick = function(){
     alert(feedbackData);
+    comment.innerHTML = feedbackData;
 };

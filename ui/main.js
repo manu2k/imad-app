@@ -63,12 +63,12 @@ submit.onclick = function(){
 };
 
 //comments section
-var comment = document.getElementById('comment');
-var addedComment = document.getElementById('feedback');
-var feedbackData = addedComment.value;
+var groupComments='';
 var enterComments = document.getElementById('submit_button');
 enterComments.onclick = function(){
-    var groupComments;
+    var comment = document.getElementById('comment');
+    var addedComment = document.getElementById('feedback');
+    var feedbackData = addedComment.value;
     groupComments += feedbackData; 
     comment.innerHTML = groupComments;
     

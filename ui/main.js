@@ -82,4 +82,6 @@ enterComments.onclick = function(){
             }
         }
     };
+    request.open('GET','http://manu2k.imad.hasura-app.io/comments',true);
+    request.send(null);
 };

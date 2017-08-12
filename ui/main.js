@@ -65,6 +65,9 @@ submit.onclick = function(){
 //comments section
 var groupComments='';
 var enterComments = document.getElementById('submit_button');
+if (enterComments.onclick()){
+    alert("hello there!!")
+}
 enterComments.onclick = function(){
     var comment = document.getElementById('comment');
     var addedComment = document.getElementById('feedback');

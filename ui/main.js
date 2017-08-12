@@ -37,7 +37,7 @@ button.onclick = function (){
 var submit = document.getElementById('submit_btn');
 submit.onclick = function(){
     //make a request to the server and send name
-     var request = new XMLHttpRequest();
+    var request = new XMLHttpRequest();
     
     request.onreadystatechange = function(){
         if (request.readyState === XMLHttpRequest.DONE) {
@@ -63,11 +63,23 @@ submit.onclick = function(){
 };
 
 //comments section
-var comment = document.getElementById('comment');
+//var comment = document.getElementById('comment');
 var addedComment = document.getElementById('feedback');
 var feedbackData = addedComment.value;
 var enterComments = document.getElementById('submit_button');
 enterComments.onclick = function(){
     alert(feedbackData);
     comment.innerHTML = feedbackData;
+    var request = new XMLHttpRequest();
+    
+    request.onreadystatechange = function(){
+       if (request.readyState === XMLHttpRequest.DONE) {
+            if(request.status === 200){
+                var counter = request.responseText;
+                //var span = document.getElementById('count');
+                var comment = document.getElementById('comment');
+                comment.innerHTML = counter.toString();
+            }
+        }
+    };
 };

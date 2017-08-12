@@ -63,13 +63,16 @@ submit.onclick = function(){
 };
 
 //comments section
-//var comment = document.getElementById('comment');
+var comment = document.getElementById('comment');
 var addedComment = document.getElementById('feedback');
 var feedbackData = addedComment.value;
 var enterComments = document.getElementById('submit_button');
 enterComments.onclick = function(){
-    alert(feedbackData);
-    comment.innerHTML = feedbackData;
+    var groupComments;
+    groupComments += feedbackData; 
+    comment.innerHTML = groupComments;
+    
+    /*
     var request = new XMLHttpRequest();
     
     request.onreadystatechange = function(){
@@ -83,5 +86,5 @@ enterComments.onclick = function(){
         }
     };
     request.open('GET','http://manu2k.imad.hasura-app.io/comments',true);
-    request.send(null);
+    request.send(null);*/
 };

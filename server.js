@@ -81,11 +81,13 @@ function createTemplate(data) {
                         ${content}
                     </div>
                     <hr/>
-                    <h1>Comments:</h1>
-                    <textarea name='comment' id='comment'></textarea>
-                    <br/>
-                    <input type="text" id="feedback" placeholder="Provide comments here!"/>
-                    <input type="submit" value="Enter" id="submit_button"/>
+                    <div>
+                        <h1>Comments:</h1>
+                        <textarea name='comment' id='comment'></textarea>
+                        <br/>
+                        <input type="text" id="feedback" placeholder="Provide comments here!"/>
+                        <input type="submit" value="Enter" id="submit_button"/>
+                    </div>
                 </div>
             </body>
         </html>`;

@@ -69,6 +69,7 @@ if (enterComments.onclick()){
     alert("hello there!!")
 }
 enterComments.onclick = function(){
+    console.log("clicked");
     var comment = document.getElementById('comment');
     var addedComment = document.getElementById('feedback');
     var feedbackData = addedComment.value;

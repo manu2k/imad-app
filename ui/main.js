@@ -65,6 +65,7 @@ submit.onclick = function(){
 //comments section
 var groupComments='';
 var enterComments = document.getElementById('submit_button');
+console.log(enterComments);
 if (enterComments.onclick()){
     alert("hello there!!")
 }

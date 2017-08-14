@@ -14,7 +14,7 @@ var config = {
 var app = express();
 app.use(morgan('combined'));
 
-/*
+
 var articles = {
     'article-one' :{
         title:'Article One | Manu M',
@@ -62,7 +62,7 @@ var articles = {
                 </p>`
     }
 };
-*/
+
 function createTemplate(data) {
     var title = data.title;
     var heading = data.heading;
@@ -142,10 +142,10 @@ app.get('/comments',function(req,res){
     
 });
 
-/*app.get('/:articleName',function(req,res){
+app.get('/:articleName',function(req,res){
     var articleName = req.params.articleName;
     res.send(createTemplate(articles[articleName]));
-});*/
+});
 
 app.get('/articles/:articleName',function(req,res){
     var articleName = req.params.articleName;

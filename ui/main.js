@@ -4,6 +4,7 @@ console.log('Loaded!');
 //var element = document.getElementById('main-text');
 //element.innerHTML = 'New value';
 
+/*
 //Move the image
 var img = document.getElementById('madi');
 var marginLeft = 0;
@@ -61,7 +62,8 @@ submit.onclick = function(){
     request.send(null);
     
 };
-
+*/
+/*
 //comments section
 var groupComments='';
 var enterComments = document.getElementById('submit_button');
@@ -77,7 +79,7 @@ enterComments.onclick = function(){
     groupComments += feedbackData; 
     comment.innerHTML = groupComments;
     
-    /*
+    
     var request = new XMLHttpRequest();
     
     request.onreadystatechange = function(){
@@ -91,5 +93,5 @@ enterComments.onclick = function(){
         }
     };
     request.open('GET','http://manu2k.imad.hasura-app.io/comments',true);
-    request.send(null);*/
-};
+    request.send(null);
+};*/

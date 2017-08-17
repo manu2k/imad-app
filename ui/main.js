@@ -139,11 +139,11 @@ register.onclick = function(){
             
         }
     };
-    var userName = document.getElementById('username').value;
-    var userPassword = document.getElementById('password').value;
-    console.log(userName);
-    console.log(userPassword);
+    var username = document.getElementById('username').value;
+    var userpassword = document.getElementById('password').value;
+    console.log(username);
+    console.log(userpassword);
     request.open('POST','http://manu2k.imad.hasura-app.io/create-user',true);
     request.setRequestHeader('Content-Type','application/json');
-    request.send(JSON.stringify({username: userName, password: userPassword}));
+    request.send(JSON.stringify({username: username, password: userpassword}));
 };

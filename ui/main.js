@@ -135,8 +135,6 @@ register.onclick = function(){
                 alert('couldn\'t register the user');
                 register.value='Register';
             }
-        username.value="";
-        password.value="";
         }
     };
     var username = document.getElementById('username').value;

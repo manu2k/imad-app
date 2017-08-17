@@ -21,54 +21,6 @@ app.use(session({
     secret: 'someRandomSecretValue',
     cookie: {maxAge: 1000*60*60*24*30}
 }));
-/*
-var articles = {
-    'article-one' :{
-        title:'Article One | Manu M',
-        heading:'Article One',
-        date:'Aug 10, 2017',
-        content: `
-                    <p>
-                        This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
-                    </p>
-                    <p>
-                        This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
-                    </p>
-                    <p>
-                        This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
-                    </p>`
-    },
-    'article-two' :{
-        title:'Article Two | Manu M',
-        heading:'Article Two',
-        date:'Aug 12, 2017',
-        content: `
-                <p>
-                    This is the content for my two article. This is the content for my two article. This is the content for my two article. This is the content for my two article. 
-                </p>
-                <p>
-                    This is the content for my two article. This is the content for my two article. This is the content for my two article. This is the content for my two article. 
-                </p>
-                <p>
-                    This is the content for my two article. This is the content for my two article. This is the content for my two article. This is the content for my two article. 
-                </p>`
-    },
-    'article-three' :{
-        title:'Article Three | Manu M',
-        heading:'Article Three',
-        date:'Aug 15, 2017',
-        content: `
-                <p>
-                    This is the content for my three article. This is the content for my three article. This is the content for my three article. This is the content for my three article. This is the content for my three article. 
-                </p>
-                <p>
-                    This is the content for my three article. This is the content for my three article. This is the content for my three article. This is the content for my three article. This is the content for my three article. 
-                </p>
-                <p>
-                    This is the content for my three article. This is the content for my three article. This is the content for my three article. This is the content for my three article. This is the content for my three article. 
-                </p>`
-    }
-};*/
 
 function createTemplate(data) {
     var title = data.title;

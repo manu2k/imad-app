@@ -120,14 +120,14 @@ app.post('/login',function(req,res){
         }
     });
 });
-/*
+
 app.get('/check-login',function(req,res){
     if(req.session&&req.session.auth&&req.session.auth.userId){
         res.send("You are logged in: " + req.session.auth.userId.toString());
     }else{
         res.send("You are not logged in!");
     }
-});*/
+});
 
 app.get('/logout',function(req,res){
     delete req.session.auth;
@@ -185,7 +185,7 @@ app.get('/articles/:articleName',function(req,res){
             res.status(500).send(err.toString());
         } else {
             if (result.length === 0) {
-                res.status(404).send("Article not found")
+                res.status(404).send("Article not found");
             } else {
                 var articleData = result.rows[0];
                 res.send(createTemplate(articleData));

@@ -131,10 +131,9 @@ register.onclick = function(){
                 console.log("user successfully created");
                 alert('user created succesfully!');
                 register.value='Registered!';
-            } else if(request.status === 403){
-                alert('username/password is invalid');
-            } else if(request.status === 500){
-                alert('Something went wrong in the server');
+            } else {
+                alert('couldn\'t register the user');
+                register.value='Register';
             }
         username.value="";
         password.value="";
@@ -147,4 +146,5 @@ register.onclick = function(){
     request.open('POST','http://manu2k.imad.hasura-app.io/create-user',true);
     request.setRequestHeader('Content-Type','application/json');
     request.send(JSON.stringify({username: username, password: userpassword}));
+    register.value = 'Registering.....';
 };

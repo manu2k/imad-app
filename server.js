@@ -152,11 +152,13 @@ app.post('/login',function(req,res){
                 var dbString = result.rows[0].password;
                 var salt = dbString.split('$')[2];
                 var hashedPassword = hash(password, salt);
+                console.log("server side user pwd");
                 console.log(hashedPassword);
                 concole.log(dbString);
                 if(hashedPassword === dbString){
                     //set the session
                     req.session.auth = {userId: result.rows[0].id};
+                    console.log("server side");
                     console.log(req.session.auth);
                     
                     res.send('Credentials are correct!');

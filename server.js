@@ -158,8 +158,6 @@ app.post('/login',function(req,res){
                 if(hashedPassword === dbString){
                     //set the session
                     req.session.auth = {userId: result.rows[0].id};
-                    console.log("server side");
-                    console.log(req.session.auth);
                     
                     res.send('Credentials are correct!');
                 } else {
@@ -263,8 +261,6 @@ app.get('/ui/madi.png', function (req, res) {
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
-
-
 
 // Do not change port, otherwise your app won't run on IMAD servers
 // Use 8080 only for local development if you already have apache running on 80

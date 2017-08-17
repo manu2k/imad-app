@@ -111,8 +111,6 @@ submitLogin.onclick = function (){
                 alert('Something went wrong in the server');
             }
         }
-        username.value="";
-        password.value="";
     };
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
@@ -137,7 +135,8 @@ register.onclick = function(){
             } else if(request.status === 500){
                 alert('Something went wrong in the server');
             }
-            
+        username.value="";
+        password.value="";
         }
     };
     var username = document.getElementById('username').value;

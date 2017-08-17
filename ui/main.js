@@ -99,8 +99,7 @@ enterComments.onclick = function(){
 //submit username password
 var submitLogin = document.getElementById('login-btn');
 submitLogin.onclick = function (){
-var request = new XMLHttpRequest();
-    
+    var request = new XMLHttpRequest();
     request.onreadystatechange = function(){
         if (request.readyState === XMLHttpRequest.DONE) {
             if(request.status === 200){
@@ -126,6 +125,7 @@ var request = new XMLHttpRequest();
 //register user pwd
 var register = document.getElementById('register-btn');
 register.onclick = function(){
+    var request = new XMLHttpRequest();
     request.onreadystatechange = function(){
         if (request.readyState === XMLHttpRequest.DONE) {
             if(request.status === 200){

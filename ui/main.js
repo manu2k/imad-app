@@ -129,7 +129,8 @@ register.onclick = function(){
         if (request.readyState === XMLHttpRequest.DONE) {
             if(request.status === 200){
                 console.log("user successfully created");
-                alert('created succesfully!');
+                alert('user created succesfully!');
+                register.value='Registered!';
             } else if(request.status === 403){
                 alert('username/password is invalid');
             } else if(request.status === 500){

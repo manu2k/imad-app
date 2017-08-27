@@ -52,10 +52,16 @@ function createTemplate(data) {
                     <hr/>
                     <div>
                         <h1>Comments:</h1>
-                        <textarea name='comment' id='comment'></textarea>
+                        <!--<textarea name='comment' id='comment'></textarea>
                         <br/>
                         <input type="text" id="feedback" placeholder="Provide comments here!"/>
-                        <input type="submit" value="Enter" id="submit_button"/>
+                        <input type="submit" value="Enter" id="submit_button"/>-->
+                        
+                        <div id="comment_form">
+                        </div>
+                        <div id="comments">
+                            <center>Loading comments...</center>
+                        </div>
                     </div>
                 </div>
             </body>
